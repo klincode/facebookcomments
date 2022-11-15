@@ -7,7 +7,17 @@
 		<title>fb</title>
 	</head>
 	<body>
-		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button>
+		<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
+
+		<div id="fb-root"></div>
+		<script
+			async
+			defer
+			crossorigin="anonymous"
+			src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v15.0&appId=3190129234610667&autoLogAppEvents=1"
+			nonce="gbkoplb9"
+		></script>
+		<!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button> -->
 
 		<script>
 			console.log('ok')
