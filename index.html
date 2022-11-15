@@ -5,6 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta property="fb:app_id" content="3190129234610667" />
+		<remove name="X-Powered-By" />
+		<remove name="X-Content-Type-Options" />
+		<add name="X-Frame-Options" value="ALLOW-FROM http://sharepointsitecollectionurl " />
+		<add name="Content-Security-Policy" value="frame-ancestors sharepointwebapplicationurl" />
+		<add name="X-Content-Type-Options" value="nosniff" />
+		<add name="X-XSS-Protection" value="1; mode=block" />
+		<add name="X-UA-Compatible" value="IE=Edge" />
 		<title>fb</title>
 		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 		<script
