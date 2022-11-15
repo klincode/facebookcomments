@@ -20,14 +20,6 @@
 		<!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button> -->
 
 		<script>
-			console.log('ok')
-
-			FB.getLoginStatus(function (response) {
-				statusChangeCallback(response)
-			})
-		</script>
-
-		<script>
 			window.fbAsyncInit = function () {
 				FB.init({
 					appId: '3190129234610667',
@@ -37,6 +29,11 @@
 				})
 
 				FB.AppEvents.logPageView()
+				console.log('ok')
+
+				FB.getLoginStatus(function (response) {
+					statusChangeCallback(response)
+				})
 			}
 			;(function (d, s, id) {
 				var js,
