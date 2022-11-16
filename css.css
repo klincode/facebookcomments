@@ -1,7 +1,4 @@
-.test {
+.items-center {
 	border: 1px solid red;
-	width: 80%;
-}
-.test .textarea {
-	background-color: pink;
+	background-color: lightblue;
 }
