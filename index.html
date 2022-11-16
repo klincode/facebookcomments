@@ -4,48 +4,30 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>fb</title>
+		<title>Document</title>
+		<link rel="stylesheet" href="css.css" />
 	</head>
 	<body>
-		<div class="fb-comments" data-href="https://fbtesty.netlify.app/" data-width="100" data-numposts="5"></div>
-
-		<div id="fb-root"></div>
-		<script
-			async
-			defer
-			crossorigin="anonymous"
-			src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v15.0&appId=3190129234610667&autoLogAppEvents=1"
-			nonce="gbkoplb9"
-		></script>
-		<!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button> -->
-
+		<div id="disqus_thread"></div>
 		<script>
-			window.fbAsyncInit = function () {
-				FB.init({
-					appId: '3190129234610667',
-					cookie: true,
-					xfbml: true,
-					// version: '15',
-				})
+			/**
+			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
 
-				FB.AppEvents.logPageView()
-				console.log('ok')
-
-				FB.getLoginStatus(function (response) {
-					statusChangeCallback(response)
-				})
+			var disqus_config = function () {
+				this.page.url = 'https://adamtesty.netlify.app/' // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = 'https://adamtesty.netlify.app/' // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 			}
-			;(function (d, s, id) {
-				var js,
-					fjs = d.getElementsByTagName(s)[0]
-				if (d.getElementById(id)) {
-					return
-				}
-				js = d.createElement(s)
-				js.id = id
-				js.src = 'https://connect.facebook.net/en_US/sdk.js'
-				fjs.parentNode.insertBefore(js, fjs)
-			})(document, 'script', 'facebook-jssdk')
+
+			;(function () {
+				// DON'T EDIT BELOW THIS LINE
+				var d = document,
+					s = d.createElement('script')
+				s.src = 'https://https-adamtesty-netlify-app.disqus.com/embed.js'
+				s.setAttribute('data-timestamp', +new Date())
+				;(d.head || d.body).appendChild(s)
+			})()
 		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	</body>
 </html>
